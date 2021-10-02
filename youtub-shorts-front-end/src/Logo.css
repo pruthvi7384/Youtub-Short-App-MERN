@@ -1,0 +1,17 @@
+.logo{
+   position: absolute;
+   top: 0;
+   padding:10px;
+}
+.d-flex{
+    display:flex;
+    align-items:center;
+}
+.short__logo{
+    width:25px;
+    object-fit: contain;
+}
+h3{
+    padding:0px 5px;
+    font-weight: bold;
+}

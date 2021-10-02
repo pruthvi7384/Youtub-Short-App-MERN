@@ -1,0 +1,17 @@
+.videoSidebar {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    color: white;
+  }
+  
+  .videoSidebar__button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  @media(max-width:500px){
+    .videoSidebar{
+        right: 5px;
+    }
+  }

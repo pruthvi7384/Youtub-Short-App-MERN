@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+html::-webkit-scrollbar{
+  display:none;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  display:grid;
+  place-items: center;
+  color: white;
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+.shorts_vedios{
+  position: relative;
+  height: 550px;
+  border-radius: 20px;
+  overflow: scroll;
+  width: 500px;
+  scroll-snap-type: y mandatory;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.shorts_vedios::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.shorts_vedios {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media(max-width:500px){
+  .shorts_vedios{
+    position: relative;
+    height: 100vh;
+    border-radius: 20px;
+    overflow: scroll;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+  }
+}

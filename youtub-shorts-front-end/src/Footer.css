@@ -1,0 +1,48 @@
+.videoFooter {
+    position: relative;
+    bottom: 100px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .videoFooter__text {
+    flex: 1;
+  }
+  .videoFooter__text > h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .videoFooter__text > p {
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+  .videoFooter__record {
+    animation: spinTheRecord infinite 5s linear;
+    height: 50px;
+    filter: invert(1);
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+  }
+  marquee {
+    height: fit-content;
+    margin-left: 10px;
+    width: 60%;
+    font-weight: bold;
+  }
+  
+@keyframes spinTheRecord {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media(max-width:500px){
+    .videoFooter{
+      margin-left: 5px;
+    }
+    .videoFooter__record{
+      right: 5px;
+    }
+  }
