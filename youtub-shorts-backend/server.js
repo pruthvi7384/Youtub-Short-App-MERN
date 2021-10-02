@@ -17,9 +17,8 @@ app.use(express.json());
 app.use(cors());
 
 // Db Config
-// 0ikVpqZIJmsAJFtO
 
-const connection_URL = 'mongodb+srv://admin:0ikVpqZIJmsAJFtO@cluster0.lo476.mongodb.net/youtubshorts?retryWrites=true&w=majority';
+const connection_URL = 'Your MongoDb Database Conection URL';
 mongoose.connect(connection_URL, {
     useNewUrlParser: true,
     useNewUrlParser: true,
